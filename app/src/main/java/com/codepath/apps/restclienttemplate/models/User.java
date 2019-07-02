@@ -3,7 +3,9 @@ package com.codepath.apps.restclienttemplate.models;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 
     // list all the attributes
     public String name;
@@ -22,7 +24,7 @@ public class User {
             e.printStackTrace();
         }
         try {
-            user.uid = json.getLong("i");
+            user.uid = json.getLong("id");
         } catch (JSONException e) {
             e.printStackTrace();
         }

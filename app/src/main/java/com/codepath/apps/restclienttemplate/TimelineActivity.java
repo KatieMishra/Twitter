@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -34,7 +35,7 @@ public class TimelineActivity extends AppCompatActivity {
 
     //CONSTANTS
     // a numeric code to identify the edit activity
-    public static final int EDIT_REQUEST_CODE = 20;
+    public static final int COMPOSE_TWEET_REQUEST_CODE = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,15 +57,43 @@ public class TimelineActivity extends AppCompatActivity {
         populateTimeline();
     }
 
+    // after new tweet added, update feed
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == COMPOSE_TWEET_REQUEST_CODE && resultCode == RESULT_OK) {
+            Tweet resultTweet = (Tweet) data.getSerializableExtra("tweet");
+            // notify the adapter
+            tweets.add(0, resultTweet);
+            tweetAdapter.notifyItemInserted(0);
+            rvTweets.scrollToPosition(0);
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
     //add item to action bar to be able to compose tweets
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.login, menu);
-        Intent i = new Intent(TimelineActivity.this, ComposeActivity.class);
-        // brings up the compose tweet activity
-        startActivityForResult(i, EDIT_REQUEST_CODE);
+        getMenuInflater().inflate(R.menu.menu_timeline, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.miCompose:
+                composeMessage();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void composeMessage() {
+        // open ComposeActivity to create a new tweet
+        Intent composeTweet = new Intent(this, ComposeActivity.class);
+        startActivityForResult(composeTweet, COMPOSE_TWEET_REQUEST_CODE);
     }
 
     private void populateTimeline() {

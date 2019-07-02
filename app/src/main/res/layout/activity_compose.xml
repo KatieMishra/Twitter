@@ -7,23 +7,25 @@
     tools:context=".ComposeActivity">
 
     <EditText
-        android:id="@+id/tweetText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:id="@+id/etTweetInput"
+        android:layout_width="291dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="@string/input_text"
+        android:inputType="textMultiLine|text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <Button
-        android:id="@+id/btnTweet"
+        android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Tweet"
-        app:layout_constraintStart_toEndOf="@+id/tweetText"
+        android:text="@string/tweetInputHint"
+        app:layout_constraintStart_toEndOf="@+id/etTweetInput"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
