@@ -10,6 +10,9 @@ import com.codepath.apps.restclienttemplate.models.SampleModel;
 import com.codepath.apps.restclienttemplate.models.SampleModelDao;
 import com.codepath.oauth.OAuthLoginActionBarActivity;
 
+/* Katie Mishra - FBU Android 2019 - krmishra@stanford.edu
+ * LoginActivity allows users to log into the app via OAuth.
+ */
 public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 
 	SampleModelDao sampleModelDao;

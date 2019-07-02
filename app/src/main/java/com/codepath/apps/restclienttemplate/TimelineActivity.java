@@ -1,10 +1,12 @@
 package com.codepath.apps.restclienttemplate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -17,12 +19,22 @@ import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
+/* Katie Mishra - FBU Android 2019 - krmishra@stanford.edu
+ * TimelineActivity controls the homescreen where users can view
+ * tweets from their feed. Users can also click on a button to
+ * compose their own tweets.
+ */
 public class TimelineActivity extends AppCompatActivity {
 
+    //Global Variables
     private TwitterClient client;
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
+
+    //CONSTANTS
+    // a numeric code to identify the edit activity
+    public static final int EDIT_REQUEST_CODE = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +54,17 @@ public class TimelineActivity extends AppCompatActivity {
         // set the adapter
         rvTweets.setAdapter(tweetAdapter);
         populateTimeline();
+    }
+
+    //add item to action bar to be able to compose tweets
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.login, menu);
+        Intent i = new Intent(TimelineActivity.this, ComposeActivity.class);
+        // brings up the compose tweet activity
+        startActivityForResult(i, EDIT_REQUEST_CODE);
+        return true;
     }
 
     private void populateTimeline() {

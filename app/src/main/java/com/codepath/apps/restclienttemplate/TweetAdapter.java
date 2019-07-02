@@ -17,6 +17,10 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
 
+/* Katie Mishra - FBU Android 2019 - krmishra@stanford.edu
+ * TweetAdapter controls the RecyclerView of tweets displayed in the feed,
+ * updating them with user's name, screenname, time tweeted, and tweet body text.
+ */
 public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> {
 
     private List<Tweet> mTweets;
@@ -48,6 +52,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         holder.tvUsername.setText(tweet.user.name);
         holder.tvBody.setText(tweet.body);
         holder.tvTime.setText(getRelativeTimeAgo(tweet.createdAt));
+        holder.tvUID.setText("@" + tweet.user.screenName);
 
         Glide.with(context).load(tweet.user.profileImageUrl).into(holder.ivProfileImage);
     }
@@ -63,6 +68,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         public TextView tvUsername;
         public TextView tvBody;
         public TextView tvTime;
+        public TextView tvUID;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -72,10 +78,11 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             tvUsername = (TextView) itemView.findViewById(R.id.tvUserName);
             tvBody = (TextView) itemView.findViewById(R.id.tvBody);
             tvTime = (TextView) itemView.findViewById(R.id.tvTime);
+            tvUID = (TextView) itemView.findViewById(R.id.tvUID);
         }
     }
 
-    // getRelativeTimeAgo("Mon Apr 01 21:16:23 +0000 2014");
+    // return how long ago relative to current time tweet was sent
     public String getRelativeTimeAgo(String rawJsonDate) {
         String twitterFormat = "EEE MMM dd HH:mm:ss ZZZZZ yyyy";
         SimpleDateFormat sf = new SimpleDateFormat(twitterFormat, Locale.ENGLISH);
