@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
+import com.wafflecopter.charcounttextview.CharCountTextView;
 
 import org.json.JSONObject;
 import org.parceler.Parcels;
@@ -39,6 +40,17 @@ public class ComposeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 postTweet(etTweetInput.getText().toString());
+            }
+        });
+
+        CharCountTextView charCountTextView = (CharCountTextView)findViewById(R.id.tvTextCounter);
+        EditText editText = (EditText)findViewById(R.id.etTweetInput);
+
+        charCountTextView.setEditText(editText);
+        charCountTextView.setCharCountChangedListener(new CharCountTextView.CharCountChangedListener() {
+            @Override
+            public void onCountChanged(int i, boolean b) {
+
             }
         });
 
