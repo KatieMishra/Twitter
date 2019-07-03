@@ -1,11 +1,15 @@
 package com.codepath.apps.restclienttemplate.models;
 
+import android.os.Parcelable;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.io.Serializable;
 
-public class User implements Serializable {
+@Parcel
+public class User implements Parcelable {
 
     // list all the attributes
     public String name;

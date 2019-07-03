@@ -1,11 +1,15 @@
 package com.codepath.apps.restclienttemplate.models;
 
+import android.os.Parcelable;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.io.Serializable;
 
-public class Tweet implements Serializable {
+@Parcel
+public class Tweet implements Parcelable {
 
     // list out the attributes to store
     public String body;

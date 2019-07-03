@@ -6,10 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONObject;
+import org.parceler.Parcels;
 
 import cz.msebera.android.httpclient.Header;
 
@@ -49,7 +51,7 @@ public class ComposeActivity extends AppCompatActivity {
            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                Tweet tweet= Tweet.fromJSON(response);
                Intent sendResult= new Intent();
-               sendResult.putExtra("tweet", tweet);
+               sendResult.putExtra("tweet", Parcels.wrap(tweet));
                setResult(RESULT_OK, sendResult);
                finish();
            }
