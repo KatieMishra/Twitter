@@ -45,4 +45,14 @@ public class User implements Parcelable {
 
         return user;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(android.os.Parcel dest, int flags) {
+
+    }
 }

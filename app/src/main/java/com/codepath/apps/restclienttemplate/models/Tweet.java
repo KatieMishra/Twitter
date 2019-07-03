@@ -6,8 +6,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
 
-import java.io.Serializable;
-
 @Parcel
 public class Tweet implements Parcelable {
 
@@ -43,5 +41,15 @@ public class Tweet implements Parcelable {
             e.printStackTrace();
         }
         return tweet;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(android.os.Parcel dest, int flags) {
+
     }
 }

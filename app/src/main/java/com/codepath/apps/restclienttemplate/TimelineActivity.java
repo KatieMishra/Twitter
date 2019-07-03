@@ -59,11 +59,14 @@ public class TimelineActivity extends AppCompatActivity {
         tweetAdapter = new TweetAdapter(tweets);
         //RecyclerView setup (layout manager, use adapter)
         rvTweets.setLayoutManager(new LinearLayoutManager(this));
-        // add line between items
-        rvTweets.addItemDecoration(new DividerItemDecoration(context,
-                DividerItemDecoration.VERTICAL));
+
         // set the adapter
         rvTweets.setAdapter(tweetAdapter);
+
+        // add line between items
+
+        rvTweets.addItemDecoration(new DividerItemDecoration(this,
+                DividerItemDecoration.VERTICAL));
         // Lookup the swipe container view
         swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
         // Setup refresh listener which triggers new data loading
@@ -73,7 +76,8 @@ public class TimelineActivity extends AppCompatActivity {
                 // Your code to refresh the list here.
                 // Make sure you call swipeContainer.setRefreshing(false)
                 // once the network request has completed successfully.
-                fetchTimelineAsync(0);
+                tweetAdapter.clear();
+                populateTimeline();
             }
         });
         // Configure the refreshing colors
@@ -82,26 +86,6 @@ public class TimelineActivity extends AppCompatActivity {
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
         populateTimeline();
-    }
-
-    public void fetchTimelineAsync(int page) {
-        // Send the network request to fetch the updated data
-        // `client` here is an instance of Android Async HTTP
-        // getHomeTimeline is an example endpoint.
-        client.getHomeTimeline(new JsonHttpResponseHandler() {
-            public void onSuccess(JSONArray json) {
-                // Remember to CLEAR OUT old items before appending in the new ones
-                tweetAdapter.clear();
-                // ...the data has come back, add new items to your adapter...
-                tweetAdapter.addAll(...);
-                // Now we call setRefreshing(false) to signal refresh has finished
-                swipeContainer.setRefreshing(false);
-            }
-
-            public void onFailure(Throwable e) {
-                Log.d("DEBUG", "Fetch timeline error: " + e.toString());
-            }
-        });
     }
 
 
@@ -162,8 +146,11 @@ public class TimelineActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     tweets.add(tweet);
-                    tweetAdapter.notifyItemInserted(tweets.size() - 1);
                 }
+
+                tweetAdapter.addAll(tweets);
+                // Now we call setRefreshing(false) to signal refresh has finished
+                swipeContainer.setRefreshing(false);
             }
 
             @Override

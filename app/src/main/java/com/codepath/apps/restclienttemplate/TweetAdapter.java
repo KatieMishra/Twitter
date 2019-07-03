@@ -39,7 +39,12 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
 
         View tweetView = inflater.inflate(R.layout.item_tweet, parent, false);
         ViewHolder viewHolder = new ViewHolder(tweetView);
+
+        //add itemView's OnClickListener
+        //itemView.setOnClickListener(this);
         return viewHolder;
+
+
 
     }
 
@@ -111,4 +116,21 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         mTweets.addAll(list);
         notifyDataSetChanged();
     }
+
+    /*@Override
+    public void onClick(View v) {
+        // get item position
+        int position = getAdapterPosition();
+        // make sure the position exists in the view
+        if (position != RecyclerView.NO_POSITION) {
+            // get the movie at the position, this won't work if the class is static
+            Movie movie = movies.get(position);
+            // create intent for the new activity
+            Intent intent = new Intent(context, MovieDetailsActivity.class);
+            //serialize the movie using parceler, use its short name as a key
+            intent.putExtra(Movie.class.getSimpleName(), Parcels.wrap(movie));
+            // show the activity
+            context.startActivity(intent);
+        }
+    }*/
 }
