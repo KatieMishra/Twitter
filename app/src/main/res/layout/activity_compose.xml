@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,24 +9,32 @@
     <EditText
         android:id="@+id/etTweetInput"
         android:layout_width="291dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:autofillHints=""
         android:ems="10"
+
+        android:gravity="start|top"
         android:hint="@string/input_text"
-        android:inputType="textMultiLine|text"
+        android:inputType="textMultiLine"
         android:maxLength="280"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.wafflecopter.charcounttextview.CharCountTextView
-        android:layout_below="@id/etTweetInput"
         android:id="@+id/tvTextCounter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:maxCharacters="280"
-        app:exceededTextColor="#FF0000"/>
+        android:layout_below="@id/etTweetInput"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:exceededTextColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTweetInput"
+        app:maxCharacters="280" />
 
     <Button
         android:id="@+id/btnSend"
@@ -34,7 +42,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/tweetInputHint"
-        app:layout_constraintStart_toEndOf="@+id/etTweetInput" />
+        app:layout_constraintBottom_toTopOf="@+id/tvTextCounter"
+        app:layout_constraintStart_toEndOf="@+id/etTweetInput"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

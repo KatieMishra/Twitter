@@ -1,15 +1,11 @@
 package com.codepath.apps.restclienttemplate.models;
 
-import android.os.Parcelable;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
 
-import java.io.Serializable;
-
 @Parcel
-public class User implements Parcelable {
+public class User {
 
     // list all the attributes
     public String name;
@@ -46,13 +42,4 @@ public class User implements Parcelable {
         return user;
     }
 
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(android.os.Parcel dest, int flags) {
-
-    }
 }

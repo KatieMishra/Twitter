@@ -1,6 +1,7 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.restclienttemplate.models.Tweet;
+
+import org.parceler.Parcels;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -29,6 +32,50 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
     // pass in the Tweets array in the constructor
     public TweetAdapter(List<Tweet> tweets) {
         mTweets = tweets;
+    }
+
+    // create ViewHolder class
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        public ImageView ivProfileImage;
+        public TextView tvUsername;
+        public TextView tvBody;
+        public TextView tvTime;
+        public TextView tvUID;
+        public TextView tvRetweets;
+        public TextView tvFavorites;
+        TweetAdapter tweetAdapter;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+
+            // perform findViewById lookups
+            ivProfileImage = (ImageView) itemView.findViewById(R.id.ivProfileImage);
+            tvUsername = (TextView) itemView.findViewById(R.id.tvUserName);
+            tvBody = (TextView) itemView.findViewById(R.id.tvBody);
+            tvTime = (TextView) itemView.findViewById(R.id.tvTime);
+            tvUID = (TextView) itemView.findViewById(R.id.tvUID);
+            tvRetweets = (TextView) itemView.findViewById(R.id.tvRetweets);
+            tvFavorites = (TextView) itemView.findViewById(R.id.tvFavorites);
+            //add itemView's OnClickListener
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            // get item position
+            int position = getAdapterPosition();
+            // make sure the position exists in the view
+            if (position != RecyclerView.NO_POSITION) {
+                // get the movie at the position, this won't work if the class is static
+                Tweet tweet = mTweets.get(position);
+                // create intent for the new activity
+                Intent intent = new Intent(context, DetailActivity.class);
+                //serialize the movie using parceler, use its short name as a key
+                intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+                // show the activity
+                context.startActivity(intent);
+            }
+        }
     }
 
     // for each row, inflate the layout and cache references into ViewHolder
@@ -58,6 +105,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         holder.tvBody.setText(tweet.body);
         holder.tvTime.setText(getRelativeTimeAgo(tweet.createdAt));
         holder.tvUID.setText("@" + tweet.user.screenName);
+        holder.tvFavorites.setText(Integer.toString(tweet.favoriteCount));
+        holder.tvRetweets.setText(Integer.toString(tweet.retweetCount));
 
         Glide.with(context).load(tweet.user.profileImageUrl).into(holder.ivProfileImage);
     }
@@ -67,25 +116,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         return mTweets.size();
     }
 
-    // create ViewHolder class
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        public ImageView ivProfileImage;
-        public TextView tvUsername;
-        public TextView tvBody;
-        public TextView tvTime;
-        public TextView tvUID;
 
-        public ViewHolder(View itemView) {
-            super(itemView);
-
-            // perform findViewById lookups
-            ivProfileImage = (ImageView) itemView.findViewById(R.id.ivProfileImage);
-            tvUsername = (TextView) itemView.findViewById(R.id.tvUserName);
-            tvBody = (TextView) itemView.findViewById(R.id.tvBody);
-            tvTime = (TextView) itemView.findViewById(R.id.tvTime);
-            tvUID = (TextView) itemView.findViewById(R.id.tvUID);
-        }
-    }
 
     // return how long ago relative to current time tweet was sent
     public String getRelativeTimeAgo(String rawJsonDate) {
@@ -117,20 +148,5 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         notifyDataSetChanged();
     }
 
-    /*@Override
-    public void onClick(View v) {
-        // get item position
-        int position = getAdapterPosition();
-        // make sure the position exists in the view
-        if (position != RecyclerView.NO_POSITION) {
-            // get the movie at the position, this won't work if the class is static
-            Movie movie = movies.get(position);
-            // create intent for the new activity
-            Intent intent = new Intent(context, MovieDetailsActivity.class);
-            //serialize the movie using parceler, use its short name as a key
-            intent.putExtra(Movie.class.getSimpleName(), Parcels.wrap(movie));
-            // show the activity
-            context.startActivity(intent);
-        }
-    }*/
+
 }

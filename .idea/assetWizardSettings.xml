@@ -29,17 +29,6 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
-                                      <entry key="clipartAsset">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="url" value="jar:file:/private/var/folders/vt/r14mwwhd181g9h4x_cwjblwr0000gn/T/AppTranslocation/41F75C15-0FE4-42C2-AC52-8B3B93819061/d/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/editor/ic_border_color_black_24dp.xml" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
                                       <entry key="image">
                                         <value>
                                           <PersistentState>
@@ -57,7 +46,7 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="imageAsset" value="$PROJECT_DIR$/twitter-redesign-icons/pngs/ic_vector_compose.png" />
-                                      <entry key="outputName" value="ic_compose" />
+                                      <entry key="outputName" value="compose_tweet" />
                                       <entry key="theme" value="HOLO_DARK" />
                                       <entry key="themeColor" value="ffffff" />
                                     </map>
@@ -76,17 +65,6 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
-                                      <entry key="foregroundClipartAsset">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="url" value="jar:file:/private/var/folders/vt/r14mwwhd181g9h4x_cwjblwr0000gn/T/AppTranslocation/41F75C15-0FE4-42C2-AC52-8B3B93819061/d/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/editor/ic_border_color_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>

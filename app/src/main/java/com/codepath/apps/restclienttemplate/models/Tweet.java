@@ -1,19 +1,19 @@
 package com.codepath.apps.restclienttemplate.models;
 
-import android.os.Parcelable;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
 
 @Parcel
-public class Tweet implements Parcelable {
+public class Tweet {
 
     // list out the attributes to store
     public String body;
     public long uid; //database ID for the tweet
     public User user;
     public String createdAt;
+    public int retweetCount;
+    public Integer favoriteCount;
 
     // deserialize the JSON
     public static Tweet fromJSON(JSONObject jsonObject) {
@@ -40,16 +40,17 @@ public class Tweet implements Parcelable {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        try {
+            tweet.retweetCount = jsonObject.getInt("retweet_count");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        try {
+            tweet.favoriteCount = jsonObject.getInt("favorite_count");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         return tweet;
     }
 
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(android.os.Parcel dest, int flags) {
-
-    }
 }
