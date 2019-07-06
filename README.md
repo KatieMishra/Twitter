@@ -26,8 +26,8 @@ The following **stretch** features are implemented:
 * [x] User sees an **indeterminate progress indicator** when any background or network task is happening
 * [ ] User can **select "reply" from detail view to respond to a tweet**
   * [ ] User that wrote the original tweet is **automatically "@" replied in compose**
-* [x] User can tap a tweet to **open a detailed tweet view**
-  * [x] User can **take favorite (and unfavorite) or reweet** actions on a tweet
+* [ ] User can tap a tweet to **open a detailed tweet view**
+  * [ ] User can **take favorite (and unfavorite) or reweet** actions on a tweet
 * [ ] User can **see embedded image media within a tweet** on list or detail view.
 
 The following **bonus** features are implemented:
