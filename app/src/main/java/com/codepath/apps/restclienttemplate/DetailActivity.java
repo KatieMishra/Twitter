@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import org.parceler.Parcels;
@@ -23,9 +24,9 @@ import java.util.Locale;
 
 public class DetailActivity extends AppCompatActivity {
 
-    //movie to display
+    //tweet to display
     Tweet tweet;
-    //movie image
+    //tweet image
     ImageView ivProfileImage;
     // the adapter wired to the recycler view
     TweetAdapter adapter;
@@ -52,7 +53,7 @@ public class DetailActivity extends AppCompatActivity {
         userID = (TextView) findViewById(R.id.dUID);
         tweetBody = (TextView) findViewById(R.id.dBody);
         time = (TextView) findViewById(R.id.dTime);
-        ivProfileImage = (ImageView) findViewById(R.id.ivProfileImage);
+       // ivProfileImage = (ImageView) findViewById(R.id.ivProfileImage);
 
         final Button button = findViewById(R.id.replyToTweet);
         button.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +72,7 @@ public class DetailActivity extends AppCompatActivity {
         tweetBody.setText(tweet.body);
         time.setText(getRelativeTimeAgo(tweet.createdAt));
         //ivProfileImage.setImageBitmap(tweet.user.profileImageUrl);
-        //Glide.with(context).load(tweet.user.profileImageUrl).into(holder.ivProfileImage);
+        //Glide.with(context).load(tweet.user.profileImageUrl).into(ivProfileImage);
 
     }
 

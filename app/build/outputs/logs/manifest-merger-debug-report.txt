@@ -1,0 +1,239 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
+MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/099a6d0c73a2be711e0b5b1d8efd7c68/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.xbroak:CharCountTextView:v1.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f6ff71eb7d5173b9f0d6a2490abca137/AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/1c73d74a5e6eb61731a89c2cf1dd516a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/e013db59b9bf05634e2eaf0bd48b3135/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/5d3568125beeaee0464d2517ba8d32df/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3858ccd07f3a2bafb9ffda563819cbe8/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/10ca158cd22bd7dbd909a01fd8c25e83/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/ae24fef22bfa2dcb6872a02ad0652bf7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f472ecc69fd7cfcf4e40932222122b9e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/eb93b2f69bd5c42b309bcc0fee19b04f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/0ea11f91afcbef57def8c43f99ea1b07/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/941cc931f4ab910de57775930273a71b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/57a50805c67b424d679f4c70fc6818a4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/09cbe8d72820136cfbba1dd37c13c16f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/aab6e55e21c827462d4e80995bc0c3a2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/ed5aa050d978911c948878d14d8843ae/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f1528e69d6a1b9060cf356ea2b1daf44/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/7e73fba98e205bc40d882c8de943e56e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/67dfaf133a3c0e7be01097cd74c499b6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/d14fe9b485e6f5612a7f254d9deae616/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/93d92fddf7de0c90918cf3cb7e526835/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/d588b0bba8d544dfc8157ae813a870ce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/9a63942f7831205cef3b0a74f5073b79/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3bf001135473e01ec3275c4e1d991656/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/40685f489e2a503dd71c0f24af4fd6f9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f0777f3392024393ef198b0fa15427cb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/78badf747bc9f7cc38564fd6aede81ce/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/76e040242cde13f0587d9ce24125da5c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/6eccba4344d3c7da0600818c9f51872c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/547da3ea3734d43d0c3ea38d322664fb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/156467dc48cb8bac6543daed1d422ca9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/1f3563f9259623972d4234635b721c5f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/e67d9d10913fb571d6ae0ca7233ecb5a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3342e71f18773f9ab9064b7ade9918fe/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/7806e95cf8890dbde4066c40a3bad4c7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/a76140d69074ea41d731f06d59280b82/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:2:1-44:12
+	package
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:8:22-78
+application
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:10:5-42:19
+MERGED from [com.github.xbroak:CharCountTextView:v1.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f6ff71eb7d5173b9f0d6a2490abca137/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.xbroak:CharCountTextView:v1.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f6ff71eb7d5173b9f0d6a2490abca137/AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/5d3568125beeaee0464d2517ba8d32df/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/5d3568125beeaee0464d2517ba8d32df/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3858ccd07f3a2bafb9ffda563819cbe8/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3858ccd07f3a2bafb9ffda563819cbe8/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/9a63942f7831205cef3b0a74f5073b79/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/9a63942f7831205cef3b0a74f5073b79/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3bf001135473e01ec3275c4e1d991656/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3bf001135473e01ec3275c4e1d991656/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/9a63942f7831205cef3b0a74f5073b79/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from [com.github.xbroak:CharCountTextView:v1.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f6ff71eb7d5173b9f0d6a2490abca137/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:14:9-41
+	android:icon
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:13:9-45
+	android:allowBackup
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:15:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:16:9-44
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:11:9-35
+activity#com.codepath.apps.restclienttemplate.TweetDetailAdapter
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:17:9-65
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:17:19-53
+activity#com.codepath.apps.restclienttemplate.RespondToTweet
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:18:9-52
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:18:19-49
+activity#com.codepath.apps.restclienttemplate.DetailActivity
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:19:9-52
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:19:19-49
+activity#com.codepath.apps.restclienttemplate.ComposeActivity
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:20:9-53
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:20:19-50
+activity#com.codepath.apps.restclienttemplate.TimelineActivity
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:21:9-54
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:21:19-51
+activity#com.codepath.apps.restclienttemplate.LoginActivity
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:22:9-41:20
+	android:label
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:24:13-45
+	android:theme
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:25:13-44
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:23:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:29:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/intent_host+data:scheme:@string/intent_scheme
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:31:13-40:29
+action#android.intent.action.VIEW
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:32:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:34:17-76
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:34:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:35:17-78
+	android:name
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:35:27-75
+data
+ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:37:17-39:62
+	android:host
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:38:21-55
+	android:scheme
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml:39:21-59
+uses-sdk
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/099a6d0c73a2be711e0b5b1d8efd7c68/AndroidManifest.xml:7:5-9:41
+MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/099a6d0c73a2be711e0b5b1d8efd7c68/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.xbroak:CharCountTextView:v1.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f6ff71eb7d5173b9f0d6a2490abca137/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.xbroak:CharCountTextView:v1.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f6ff71eb7d5173b9f0d6a2490abca137/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/1c73d74a5e6eb61731a89c2cf1dd516a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/1c73d74a5e6eb61731a89c2cf1dd516a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/e013db59b9bf05634e2eaf0bd48b3135/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/e013db59b9bf05634e2eaf0bd48b3135/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/5d3568125beeaee0464d2517ba8d32df/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/5d3568125beeaee0464d2517ba8d32df/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3858ccd07f3a2bafb9ffda563819cbe8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3858ccd07f3a2bafb9ffda563819cbe8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/10ca158cd22bd7dbd909a01fd8c25e83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/10ca158cd22bd7dbd909a01fd8c25e83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/ae24fef22bfa2dcb6872a02ad0652bf7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/ae24fef22bfa2dcb6872a02ad0652bf7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f472ecc69fd7cfcf4e40932222122b9e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f472ecc69fd7cfcf4e40932222122b9e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/eb93b2f69bd5c42b309bcc0fee19b04f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/eb93b2f69bd5c42b309bcc0fee19b04f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/0ea11f91afcbef57def8c43f99ea1b07/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/0ea11f91afcbef57def8c43f99ea1b07/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/941cc931f4ab910de57775930273a71b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/941cc931f4ab910de57775930273a71b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/57a50805c67b424d679f4c70fc6818a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/57a50805c67b424d679f4c70fc6818a4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/09cbe8d72820136cfbba1dd37c13c16f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/09cbe8d72820136cfbba1dd37c13c16f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/aab6e55e21c827462d4e80995bc0c3a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/aab6e55e21c827462d4e80995bc0c3a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/ed5aa050d978911c948878d14d8843ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/ed5aa050d978911c948878d14d8843ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f1528e69d6a1b9060cf356ea2b1daf44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f1528e69d6a1b9060cf356ea2b1daf44/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/7e73fba98e205bc40d882c8de943e56e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/7e73fba98e205bc40d882c8de943e56e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/67dfaf133a3c0e7be01097cd74c499b6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/67dfaf133a3c0e7be01097cd74c499b6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/d14fe9b485e6f5612a7f254d9deae616/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/d14fe9b485e6f5612a7f254d9deae616/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/93d92fddf7de0c90918cf3cb7e526835/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/93d92fddf7de0c90918cf3cb7e526835/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/d588b0bba8d544dfc8157ae813a870ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/d588b0bba8d544dfc8157ae813a870ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/9a63942f7831205cef3b0a74f5073b79/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/9a63942f7831205cef3b0a74f5073b79/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3bf001135473e01ec3275c4e1d991656/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3bf001135473e01ec3275c4e1d991656/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/40685f489e2a503dd71c0f24af4fd6f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/40685f489e2a503dd71c0f24af4fd6f9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f0777f3392024393ef198b0fa15427cb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/f0777f3392024393ef198b0fa15427cb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/78badf747bc9f7cc38564fd6aede81ce/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/78badf747bc9f7cc38564fd6aede81ce/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/76e040242cde13f0587d9ce24125da5c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/76e040242cde13f0587d9ce24125da5c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/6eccba4344d3c7da0600818c9f51872c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/6eccba4344d3c7da0600818c9f51872c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/547da3ea3734d43d0c3ea38d322664fb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/547da3ea3734d43d0c3ea38d322664fb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/156467dc48cb8bac6543daed1d422ca9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/156467dc48cb8bac6543daed1d422ca9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/1f3563f9259623972d4234635b721c5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/1f3563f9259623972d4234635b721c5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/e67d9d10913fb571d6ae0ca7233ecb5a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/e67d9d10913fb571d6ae0ca7233ecb5a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3342e71f18773f9ab9064b7ade9918fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/3342e71f18773f9ab9064b7ade9918fe/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/7806e95cf8890dbde4066c40a3bad4c7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/7806e95cf8890dbde4066c40a3bad4c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/a76140d69074ea41d731f06d59280b82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/katiemishra/.gradle/caches/transforms-2/files-2.1/a76140d69074ea41d731f06d59280b82/AndroidManifest.xml:20:5-44
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+		ADDED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/katiemishra/Desktop/Twitter/app/src/main/AndroidManifest.xml
